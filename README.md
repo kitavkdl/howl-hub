@@ -42,11 +42,20 @@ src/
   components/           shared UI pieces (Card, PageHeader, Sidebar, ...)
   lib/
     features.ts         list of pages shown in the sidebar
+    types.ts            shared data shapes (Deadline, ClubEvent, EmailSummary, ...)
+    data.ts             the only place pages get data from (fake for now)
+    mock-data.ts        the fake data behind data.ts
+    format.ts           date helpers (New York time)
     supabase.ts         Supabase client
+docs/                   notes and plans (e.g. google-oauth.md)
+TASKS.md                what each feature should build first, with AI prompts
+AGENTS.md               rules your AI coding assistant should follow
 ```
 
 - Working on a feature? Edit that feature's `page.tsx` and put feature-only components next to it (e.g. `src/app/clubs/ClubList.tsx`).
 - Something used on more than one page goes in `src/components/`.
+- Pages get data by calling functions in `src/lib/data.ts`, never by fetching from outside services directly. See the "Upcoming deadlines" card in `src/app/page.tsx` for an example.
+- Coding with AI? Start from your feature's prompt in `TASKS.md`.
 - Adding a new page: create `src/app/<name>/page.tsx` and add one line to `src/lib/features.ts`.
 
 ## Working together
