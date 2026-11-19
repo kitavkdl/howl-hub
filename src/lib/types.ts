@@ -1,7 +1,7 @@
 // Shared data shapes for every feature.
 // Frontend pages and the backend agree on these. If you need a new field,
 // add it here (and tell the backend owner) instead of inventing a local shape.
-// Dates are ISO 8601 strings, e.g. "2026-12-04T23:59:00-05:00".
+// Dates are ISO 8601 strings, e.g. "2026-12-04T23:59:00-05:00" (Date.toISOString() output is fine).
 
 export type Course = {
   id: string; // e.g. "cse214"
