@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+campus-groups-notes.md
 
 # debug
 npm-debug.log*

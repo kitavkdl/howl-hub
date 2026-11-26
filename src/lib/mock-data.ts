@@ -82,6 +82,9 @@ export const clubEvents: ClubEvent[] = [
   { id: "c1", club: "Computing Society", title: "Resume workshop", start: at(1, "18:00"), location: "SAC 302", tags: ["career", "cs"] },
   { id: "c2", club: "Korean Student Association", title: "Winter social", start: at(3, "19:00"), location: "SAC Ballroom A", tags: ["social", "food"] },
   { id: "c3", club: "Chess Club", title: "Weekly meetup", start: at(2, "17:00"), location: "Union 201", tags: ["games"] },
+  { id: "c4", club: "Robotics Team", title: "Build night", start: at(4, "18:30"), location: "Engineering 143", tags: ["cs", "games"] },
+  { id: "c5", club: "SBU Eats", title: "Community potluck", start: at(5, "17:30"), location: "Union Ballroom", tags: ["social", "food"] },
+  { id: "c6", club: "Women in Computer Science", title: "Alumni career panel", start: at(6, "19:00"), location: "Melville Library, room E2340", tags: ["career", "cs"] },
 ];
 
 export const emailSummaries: EmailSummary[] = [
